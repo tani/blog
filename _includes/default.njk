@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@v1.x/themes/prism-coy.min.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@v3.x/es5/tex-mml-chtml.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/prismjs@v1.x/components/prism-core.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+    <title>{{ title }} - Masaya's Blog</title>
+    <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      line-height: calc(1em + 0.5rem)
+    }
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+      background-color: #fffff5;
+    }
+    body > * {
+      margin: 50px auto;
+      width: min(700px, 90%);
+    }
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+    input, button, textarea, select {
+      font-family: system-ui;
+    }
+    p {
+      hyphens: auto;
+      overflow-wrap: break-word;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      overflow-wrap: break-word;
+      font-family: serif;
+      color: #c00;
+    }
+    a {
+      font-weight: bold;
+      color: #33F;
+      text-decoration: none;
+    }
+    a:hover {
+      background-color: #33F;
+      color: #fffff5;
+    }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Masaya's Blog</a></h1>
+    </header>
+    <main class="jumbotron">
+      <article>
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+      </article>
+    </main>
+    <footer>
+      Copyright &copy; 2022 TANIGUCHI Masaya. All Rights Reserved.
+    </footer>
+  </body>
+</html>

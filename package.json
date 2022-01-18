@@ -1,0 +1,10 @@
+{
+  "name": "blog",
+  "author": "TANIGUCHI Masaya",
+  "license": "Unlicensed",
+  "private": true,
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@asciidoctor/core": "^2.2.5"
+  }
+}
