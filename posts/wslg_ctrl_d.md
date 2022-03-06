@@ -1,5 +1,10 @@
-= WSLgの誤入力
-:revdate: 2022-01-17
+---
+tags:
+  - post
+title: WSLgの誤入力
+date: 2022-01-17
+layout: post
+---
 
 年始に重い腰を上げて、やっと Windows 11にアップデートした。
 目的はWSLgを使いたかったからだ。

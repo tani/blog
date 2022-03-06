@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@asciidoctor/core": "^2.2.5"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "markdown-it-pfm": "^0.1.7"
   }
 }

@@ -2,4 +2,4 @@
 layout: default
 ---
 {{ content | safe }}
-<p>(Last updated: <time datetime="{{ date }}">{{ date }}</time>)</p>
+<p>(Last updated: <time datetime="{{ date }}">{{ date.toDateString() }}</time>)</p>
