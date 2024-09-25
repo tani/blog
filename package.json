@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "format": "biome check --fix --unsafe"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.13.2",
+    "@unocss/nuxt": "^0.62.4",
+    "nuxt": "^3.13.0",
+    "rehype-mathjax": "^6.0.0",
+    "remark-math": "^6.0.0",
+    "unocss": "^0.62.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.2"
+  }
+}
