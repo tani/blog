@@ -17,6 +17,7 @@
     "unocss": "^0.62.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.2"
+    "@biomejs/biome": "^1.9.2",
+    "lefthook": "^1.7.17"
   }
 }
