@@ -1,41 +1,37 @@
 <script setup lang="ts">
+import Footer from "../components/footer.vue";
+import Profile from "../components/profile.vue";
+import Tags from "../components/tags.vue";
 const { data: articles } = await useAsyncData("home", () =>
   queryContent("/").find(),
 );
 </script>
 <template>
-	<div class="grid grid-cols-4 w-[120ch] mx-auto gap-4">
-		<header class="col-span-4">
-			<h1>たにぐちのブログ</h1>
-		</header>
-		<main class="col-span-3 border-t-solid border-b-solid">
-			<h2>記事一覧</h2>
-			<ul>
-				<li v-for="article in articles" :key="article._id">
-					{{article.title}} / {{article.description}}
-				</li>
-			</ul>
-		</main>
-		<aside class="col-span-1">
-			<section>
-				<h2>著者情報</h2>
-				<code><pre>@tani</pre></code>
-				<p>
-					数理論理学と形式言語理論に興味をもっています。
-					自然言語とプログラミング言語にも興味があります。
-				</p>
-			</section>
-			<section>
-				<h2>タグ一覧</h2>
-			</section>
-			<section>
-				<h2>関連記事</h2>
-			</section>
-		</aside>
-		<footer class="col-span-4">
-			<p>
-				Copyright &copy; 2024 Masaya Taniguchi All Rights Reserved.
-			</p>
-		</footer>
+	<div class="w-[fit-content] mx-auto">
+		<Header />
+		<div class="flex justify-center gap-4">
+			<main class="prose prose-zinc">
+				<h2>記事一覧</h2>
+				<ul class="list-none p-0">
+					<li class="border border-solid rounded-lg m-2 p-2" v-for="article in articles" :key="article._id">
+						<a :href="article._path">
+							{{ article.title }}
+						</a>
+						<p>
+							{{ article.description }}
+						</p>
+					</li>
+				</ul>
+			</main>
+			<aside class="w-[20ch]">
+				<section>
+					<Profile />
+				</section>
+				<section>
+					<Tags />
+				</section>
+			</aside>
+		</div>
+		<Footer />
 	</div>
 </template>
