@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   site: {
     url: "https://tani.github.io",
   },
-  modules: ["@nuxt/content", "@unocss/nuxt", "@nuxtjs/seo"],
+  modules: ["@nuxt/content", "@unocss/nuxt", "@nuxtjs/seo", "@nuxt/image"],
   markdown: {
     remarkPlugins: ["remark-math"],
     rehypePlugins: ["rehype-mathjax"],
