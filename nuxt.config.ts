@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@unocss/nuxt"],
+  site: {
+    url: "https://tani.github.io",
+  },
+  modules: ["@nuxt/content", "@unocss/nuxt", "@nuxtjs/seo"],
   markdown: {
     remarkPlugins: ["remark-math"],
     rehypePlugins: ["rehype-mathjax"],

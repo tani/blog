@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.13.2",
+    "@nuxtjs/seo": "^2.0.0-rc.21",
     "@unocss/nuxt": "^0.62.4",
+    "govuk-vue": "^1.0.0",
     "nuxt": "^3.13.0",
     "rehype-mathjax": "^6.0.0",
     "remark-math": "^6.0.0",
