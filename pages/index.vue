@@ -2,9 +2,6 @@
 import Footer from "../components/footer.vue";
 import Profile from "../components/profile.vue";
 import Tags from "../components/tags.vue";
-const { data: articles } = await useAsyncData("home", () =>
-  queryContent("/").find(),
-);
 </script>
 <template>
 	<div class="w-[fit-content] mx-auto">
@@ -12,16 +9,12 @@ const { data: articles } = await useAsyncData("home", () =>
 		<div class="flex justify-center gap-4">
 			<main class="prose prose-zinc">
 				<h2>記事一覧</h2>
-				<ul class="list-none p-0">
-					<li class="border border-solid rounded-lg m-2 p-2" v-for="article in articles" :key="article._id">
-						<a :href="article._path">
-							{{ article.title }}
-						</a>
-						<p>
-							{{ article.description }}
-						</p>
-					</li>
-				</ul>
+				<ContentList v-slot="{ list }">
+					<article v-for="article in list" :key="article._path">
+						{{ article.title }}
+						{{ article.description }}
+					</article>
+				</ContentList>
 			</main>
 			<aside class="w-[20ch]">
 				<section>
