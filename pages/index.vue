@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import Footer from "../components/footer.vue";
-import Profile from "../components/profile.vue";
-</script>
 <template>
   <div class="w-[fit-content] mx-auto">
     <Header />
