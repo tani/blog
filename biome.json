@@ -10,8 +10,8 @@
     "ignore": []
   },
   "formatter": {
-    "enabled": true,
-    "indentStyle": "space"
+    "useEditorconfig": true,
+    "enabled": true
   },
   "organizeImports": {
     "enabled": true

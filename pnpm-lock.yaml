@@ -15,7 +15,7 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.23.0)(webpack-sources@3.2.3)
       '@nuxtjs/seo':
-        specifier: ^2.0.0-rc.21
+        specifier: 2.0.0-rc.23
         version: 2.0.0-rc.23(h3@1.12.0)(magicast@0.3.5)(rollup@4.23.0)(vite@5.4.8(@types/node@22.7.4)(terser@5.34.1))(vue@3.5.10)(webpack-sources@3.2.3)
       '@unocss/nuxt':
         specifier: ^0.62.4
@@ -24,7 +24,7 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(vue@3.5.10)
       nuxt:
-        specifier: ^3.13.0
+        specifier: ^3.13.2
         version: 3.13.2(@biomejs/biome@1.9.2)(@parcel/watcher@2.4.1)(@types/node@22.7.4)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.23.0)(terser@5.34.1)(vite@5.4.8(@types/node@22.7.4)(terser@5.34.1))(webpack-sources@3.2.3)
       rehype-mathjax:
         specifier: ^6.0.0
@@ -39,8 +39,11 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.2
         version: 1.9.2
+      editorconfig-checker:
+        specifier: ^6.0.0
+        version: 6.0.0
       lefthook:
-        specifier: ^1.7.17
+        specifier: ^1.7.18
         version: 1.7.18
 
 packages:
@@ -2166,6 +2169,11 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
+  editorconfig-checker@6.0.0:
+    resolution: {integrity: sha512-uyTOwLJzR/k7ugiu7ITjCzkLKBhXeirQZ8hGlUkt1u/hq2Qu1E8EslgFZDN+lxZoQc97eiI87sUFgVILK4P+YQ==}
+    engines: {node: '>=20.11.0'}
+    hasBin: true
+
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
@@ -4201,8 +4209,8 @@ packages:
     resolution: {integrity: sha512-NbBoFBpqfcgd1tCiO8Lkfdk+xrA7mlLR9zgvZcZWQQwU63XAfUePyd6wZBaU93Hqw347lHnwFzttAkemHzzz4g==}
     engines: {node: '>=12.0.0'}
 
-  tinyglobby@0.2.8:
-    resolution: {integrity: sha512-AMLZywN0vbhiZi2neFEaj9VIIxC+PjDMsp0nAK6tpR86LJavZgHqGz0S/FOONwBygC+mu7R0/TyAQw0gx0Mu9Q==}
+  tinyglobby@0.2.9:
+    resolution: {integrity: sha512-8or1+BGEdk1Zkkw2ii16qSS7uVrQJPre5A9o/XkWPATkk23FZh/15BKFxPnlTy6vkljZxLqYCzzBMj30ZrSvjw==}
     engines: {node: '>=12.0.0'}
 
   to-fast-properties@2.0.0:
@@ -6137,7 +6145,7 @@ snapshots:
       magic-string: 0.30.11
       pathe: 1.1.2
       perfect-debounce: 1.0.0
-      tinyglobby: 0.2.8
+      tinyglobby: 0.2.9
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -6200,7 +6208,7 @@ snapshots:
       '@unocss/rule-utils': 0.62.4
       css-tree: 2.3.1
       postcss: 8.4.47
-      tinyglobby: 0.2.8
+      tinyglobby: 0.2.9
     transitivePeerDependencies:
       - supports-color
 
@@ -6300,7 +6308,7 @@ snapshots:
       '@unocss/inspector': 0.62.4
       chokidar: 3.6.0
       magic-string: 0.30.11
-      tinyglobby: 0.2.8
+      tinyglobby: 0.2.9
       vite: 5.4.8(@types/node@22.7.4)(terser@5.34.1)
     transitivePeerDependencies:
       - rollup
@@ -6314,7 +6322,7 @@ snapshots:
       '@unocss/core': 0.62.4
       chokidar: 3.6.0
       magic-string: 0.30.11
-      tinyglobby: 0.2.8
+      tinyglobby: 0.2.9
       unplugin: 1.14.1(webpack-sources@3.2.3)
       webpack: 5.95.0(esbuild@0.23.1)
       webpack-sources: 3.2.3
@@ -7260,6 +7268,8 @@ snapshots:
   duplexer@0.1.2: {}
 
   eastasianwidth@0.2.0: {}
+
+  editorconfig-checker@6.0.0: {}
 
   ee-first@1.1.1: {}
 
@@ -10085,7 +10095,7 @@ snapshots:
       fdir: 6.4.0(picomatch@4.0.2)
       picomatch: 4.0.2
 
-  tinyglobby@0.2.8:
+  tinyglobby@0.2.9:
     dependencies:
       fdir: 6.4.0(picomatch@4.0.2)
       picomatch: 4.0.2

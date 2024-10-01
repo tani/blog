@@ -6,21 +6,22 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "format": "biome check --fix --unsafe"
+    "check": "biome check && editorconfig-checker"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.2",
     "@nuxt/image": "^1.8.0",
-    "@nuxtjs/seo": "^2.0.0-rc.21",
+    "@nuxtjs/seo": "2.0.0-rc.23",
     "@unocss/nuxt": "^0.62.4",
     "govuk-vue": "^1.0.0",
-    "nuxt": "^3.13.0",
+    "nuxt": "^3.13.2",
     "rehype-mathjax": "^6.0.0",
     "remark-math": "^6.0.0",
     "unocss": "^0.62.4"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
-    "lefthook": "^1.7.17"
+    "editorconfig-checker": "^6.0.0",
+    "lefthook": "^1.7.18"
   }
 }
