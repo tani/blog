@@ -7,8 +7,8 @@ li::after {
 }
 </style>
 <template>
-	<header>
-		<h1 class="mb-0">たにぐちのブログ</h1>
+  <header>
+    <h1 class="mb-0">たにぐちのブログ</h1>
     <ul class="list-none p-0 m-0 flex gap-2">
       <li>
         <a href="https://tani.github.io">ホームページ</a>
@@ -20,5 +20,5 @@ li::after {
         <a href="https://tani.bsky.social">BlueSky</a>
       </li>
     </ul>
-	</header>
+  </header>
 </template>
